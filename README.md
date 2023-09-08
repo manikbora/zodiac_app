@@ -23,7 +23,7 @@ Please be aware that the data associated with the zodiac signs and their traits 
 - User-friendly interface for entering name and date of birth.
 - Instant zodiac sign determination based on user's birth date.
 - Detailed information about the user's zodiac sign and associated traits.
-- Clear and concise descriptions of love life, friendship, career, money, and success aspects.
+- Clear and concise descriptions of love life, friendship, career, money, and success aspects [Dummy data is used here]
 
 
 ## Getting Started
