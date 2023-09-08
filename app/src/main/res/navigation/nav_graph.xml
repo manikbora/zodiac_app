@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.myzodiacapp.ui.fragments.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_zodiacFragment"
+            app:destination="@id/zodiacFragment"
+            app:enterAnim="@anim/fragment_enter_right"
+            app:exitAnim="@anim/fragment_exit_left"
+            app:popEnterAnim="@anim/fragment_enter_left"
+            app:popExitAnim="@anim/fragment_exit_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/zodiacFragment"
+        android:name="com.example.myzodiacapp.ui.fragments.ZodiacFragment"
+        android:label="fragment_zodiac"
+        tools:layout="@layout/fragment_zodiac" >
+        <action
+            android:id="@+id/action_zodiacFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment"
+            app:enterAnim="@anim/fragment_enter_right"
+            app:exitAnim="@anim/fragment_exit_left"
+            app:popEnterAnim="@anim/fragment_enter_left"
+            app:popExitAnim="@anim/fragment_exit_right" />
+        <argument
+            android:name="username"
+            app:argType="string" />
+        <argument
+            android:name="dob"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.myzodiacapp.ui.fragments.ZodiacDetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_zodiac_details">
+        <argument
+            android:name="zodiac_sign"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_detailsFragment_to_loveStyleFragment"
+            app:destination="@id/loveStyleFragment"
+            app:enterAnim="@anim/fragment_enter_right"
+            app:exitAnim="@anim/fragment_exit_left"
+            app:popEnterAnim="@anim/fragment_enter_left"
+            app:popExitAnim="@anim/fragment_exit_right" />
+        <action
+            android:id="@+id/action_detailsFragment_to_careerMoneySuccessFragment"
+            app:destination="@id/careerMoneySuccessFragment"
+            app:enterAnim="@anim/fragment_enter_right"
+            app:exitAnim="@anim/fragment_exit_left"
+            app:popEnterAnim="@anim/fragment_enter_left"
+            app:popExitAnim="@anim/fragment_exit_right" />
+        <action
+            android:id="@+id/action_detailsFragment_to_friendshipStyleFragment"
+            app:destination="@id/friendshipStyleFragment"
+            app:enterAnim="@anim/fragment_enter_right"
+            app:exitAnim="@anim/fragment_exit_left"
+            app:popEnterAnim="@anim/fragment_enter_left"
+            app:popExitAnim="@anim/fragment_exit_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/loveStyleFragment"
+        android:name="com.example.myzodiacapp.ui.fragments.LoveStyleFragment"
+        android:label="fragment_love_style"
+        tools:layout="@layout/fragment_love_style" >
+        <argument
+            android:name="zodiac_sign"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_loveStyleFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:enterAnim="@anim/fragment_enter_left"
+            app:exitAnim="@anim/fragment_exit_right"
+            app:popEnterAnim="@anim/fragment_enter_left"
+            app:popExitAnim="@anim/fragment_exit_right"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/friendshipStyleFragment"
+        android:name="com.example.myzodiacapp.ui.fragments.FriendshipStyleFragment"
+        android:label="fragment_friendship_style"
+        tools:layout="@layout/fragment_friendship_style" >
+        <argument
+            android:name="zodiac_sign"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_friendshipStyleFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:enterAnim="@anim/fragment_enter_right"
+            app:exitAnim="@anim/fragment_exit_left"
+            app:popEnterAnim="@anim/fragment_enter_left"
+            app:popExitAnim="@anim/fragment_exit_right"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/careerMoneySuccessFragment"
+        android:name="com.example.myzodiacapp.ui.fragments.CareerMoneySuccessFragment"
+        android:label="fragment_career_money_success"
+        tools:layout="@layout/fragment_career_money_success" >
+        <argument
+            android:name="zodiac_sign"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_careerMoneySuccessFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:enterAnim="@anim/fragment_enter_right"
+            app:exitAnim="@anim/fragment_exit_left"
+            app:popEnterAnim="@anim/fragment_enter_left"
+            app:popExitAnim="@anim/fragment_exit_right"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
