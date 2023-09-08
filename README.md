@@ -33,7 +33,7 @@ To run the project locally, follow these steps:
 1. **Clone the repository**:
 
 ```bash
-git clone https://github.com/username/ZodiacTraitsAndroidApp.git
+git clone https://github.com/manikbora/zodiac_app.git
 ```
 
 2. **Open in Android Studio**:
