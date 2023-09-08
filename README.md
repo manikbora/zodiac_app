@@ -1,8 +1,11 @@
 # My Zodiac App
 
 ## Screenshots
-Splash Screen.png
-Main Screen.png
+[Splash Screen.png](https://github.com/manikbora/zodiac_app/blob/0c109371136643138556f28310ab3be1d2245ae5/Splash%20Screen.png)
+[Main Screen.png](https://github.com/manikbora/zodiac_app/blob/8278b8117987ca6b97bd879fe21f608fc415f137/Main%20Screen.png)
+https://github.com/manikbora/zodiac_app/blob/0c109371136643138556f28310ab3be1d2245ae5/Details%20Screen.png
+https://github.com/manikbora/zodiac_app/blob/0c109371136643138556f28310ab3be1d2245ae5/More%20Details%20Screen.png
+
 
 
 ## Overview
