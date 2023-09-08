@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import com.example.myzodiacapp.databinding.FragmentMainBinding
@@ -23,7 +24,7 @@ class MainFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         _binding = FragmentMainBinding.inflate(inflater, container, false)
         val view = binding.root
@@ -42,6 +43,8 @@ class MainFragment : Fragment() {
                 val action = MainFragmentDirections
                     .actionMainFragmentToZodiacFragment(userName,dob)
                 view.findNavController().navigate(action)
+            } else {
+                Toast.makeText(requireContext(), "Incomplete details. Please enter your name and date of birth...", Toast.LENGTH_LONG).show()
             }
         }
         return view
@@ -50,7 +53,7 @@ class MainFragment : Fragment() {
     private fun showDatePickerDialog() {
         val datePickerDialog = DatePickerDialog(
             requireContext(),
-            DatePickerDialog.OnDateSetListener { view, year, monthOfYear, dayOfMonth ->
+            { _, year, monthOfYear, dayOfMonth ->
                 // Handle date selection
                 calendar.set(year, monthOfYear, dayOfMonth)
                 val dateFormat = SimpleDateFormat("dd/MM/yyyy", Locale.US)
