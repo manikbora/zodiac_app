@@ -1,11 +1,13 @@
 # My Zodiac App
 
 ## Screenshots
-[Splash Screen.png](https://github.com/manikbora/zodiac_app/blob/0c109371136643138556f28310ab3be1d2245ae5/Splash%20Screen.png)
-[Main Screen.png](https://github.com/manikbora/zodiac_app/blob/8278b8117987ca6b97bd879fe21f608fc415f137/Main%20Screen.png)
-https://github.com/manikbora/zodiac_app/blob/0c109371136643138556f28310ab3be1d2245ae5/Details%20Screen.png
-https://github.com/manikbora/zodiac_app/blob/0c109371136643138556f28310ab3be1d2245ae5/More%20Details%20Screen.png
-
+![Splash Screen](https://github.com/manikbora/zodiac_app/blob/22c2eb73c84df29e1ab63f6b58313c2cce9b2b5c/Splash%20Screen.png)
+![Main Screen](https://github.com/manikbora/zodiac_app/blob/22c2eb73c84df29e1ab63f6b58313c2cce9b2b5c/Main%20Screen.png)
+![Details Screen](https://github.com/manikbora/zodiac_app/blob/22c2eb73c84df29e1ab63f6b58313c2cce9b2b5c/Details%20Screen.png)
+![More Details Screen](https://github.com/manikbora/zodiac_app/blob/22c2eb73c84df29e1ab63f6b58313c2cce9b2b5c/More%20Details%20Screen.png)
+![Love Style Screen](https://github.com/manikbora/zodiac_app/blob/22c2eb73c84df29e1ab63f6b58313c2cce9b2b5c/Love%20Style.png)
+![Friendship Style Screen](https://github.com/manikbora/zodiac_app/blob/22c2eb73c84df29e1ab63f6b58313c2cce9b2b5c/Friendship%20Style.png)
+![Career, Money & Success Screen](https://github.com/manikbora/zodiac_app/blob/22c2eb73c84df29e1ab63f6b58313c2cce9b2b5c/Career.png)
 
 
 ## Overview
