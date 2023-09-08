@@ -1,5 +1,9 @@
-
 # My Zodiac App
+
+## Screenshots
+Splash Screen.png
+Main Screen.png
+
 
 ## Overview
 
