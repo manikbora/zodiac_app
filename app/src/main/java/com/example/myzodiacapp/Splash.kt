@@ -1,12 +1,10 @@
 package com.example.myzodiacapp
 
 import android.content.Intent
-import android.opengl.Visibility
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import android.view.ViewGroup
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import androidx.core.view.isVisible
@@ -20,7 +18,7 @@ class Splash : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivitySplashBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        supportActionBar?.hide()
+
 
         val zoomInAnim = AnimationUtils.loadAnimation(this, R.anim.zoom_in)
         binding.ivLogo.startAnimation(zoomInAnim)
