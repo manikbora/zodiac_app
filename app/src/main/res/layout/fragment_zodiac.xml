@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="8dp"
-    android:background="@drawable/main_bg"
+    android:background="@drawable/app_bg"
     tools:context=".ui.fragments.ZodiacFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -194,7 +194,8 @@
                     android:layout_height="wrap_content"
                     android:src="@drawable/aries"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:contentDescription="@string/zodiac_sign" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 

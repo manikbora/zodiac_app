@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/main_bg"
+    android:background="@drawable/app_bg"
     tools:context=".ui.fragments.MainFragment">
 
 
@@ -123,7 +123,8 @@
                     android:hint="@string/name"
                     android:inputType="text|textCapWords"
                     android:textAlignment="center"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    tools:ignore="Autofill" />
 
                 <EditText
                     android:id="@+id/etDOB"
@@ -135,7 +136,8 @@
                     android:focusable="false"
                     android:hint="@string/date_of_birth"
                     android:textAlignment="center"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    tools:ignore="Autofill,KeyboardInaccessibleWidget,TextFields" />
 
                 <Button
                     android:id="@+id/btnShowZodiacSign"

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/main_bg"
+    android:background="@drawable/app_bg"
     tools:context=".ui.fragments.ZodiacDetailsFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -36,7 +36,8 @@
                     android:layout_marginTop="8dp"
                     android:src="@drawable/logo"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:contentDescription="@string/app_logo" />
 
                 <TextView
                     android:id="@+id/tvZodiacSignName"
@@ -158,7 +159,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/caveat_brush"
-                    android:text="Friendship Style"
+                    android:text="@string/friendship_style"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
@@ -184,7 +185,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
-                    android:text="Discover More"
+                    android:text="@string/discover_more"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/tvFriendshipStyleDetails" />
@@ -214,7 +215,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/caveat_brush"
-                    android:text="Career, Money &amp; Success"
+                    android:text="@string/career_money_n_success"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
@@ -240,7 +241,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
-                    android:text="Discover More"
+                    android:text="@string/discover_more"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/tvCareerMoneySuccessDetails" />
