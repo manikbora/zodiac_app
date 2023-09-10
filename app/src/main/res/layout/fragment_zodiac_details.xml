@@ -215,7 +215,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/caveat_brush"
-                    android:text="@string/career_money_n_success"
+                    android:text="@string/career_money_n_success_style"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
