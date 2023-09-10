@@ -19,7 +19,6 @@ class Splash : AppCompatActivity() {
         binding = ActivitySplashBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
         val zoomInAnim = AnimationUtils.loadAnimation(this, R.anim.zoom_in)
         binding.ivLogo.startAnimation(zoomInAnim)
 
@@ -40,7 +39,6 @@ class Splash : AppCompatActivity() {
             }
         })
 
-        // Start the animation on star view
         binding.ivStar.startAnimation(dyingStarAnim)
 
         Handler(Looper.getMainLooper()).postDelayed({

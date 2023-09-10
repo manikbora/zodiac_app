@@ -192,7 +192,7 @@
                     android:id="@+id/ivZodiacSign"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/aries"
+                    android:src="@drawable/logo"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     android:contentDescription="@string/zodiac_sign" />

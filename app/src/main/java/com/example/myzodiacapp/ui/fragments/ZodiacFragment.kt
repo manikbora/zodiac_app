@@ -72,18 +72,18 @@ class ZodiacFragment : Fragment() {
         }
 
         when(zodiacSign) {
-            "Aries" -> binding.tvTraitsDetails.text = getString(R.string.aries_traits)
-            "Taurus" -> binding.tvTraitsDetails.text = getString(R.string.taurus_traits)
-            "Gemini" -> binding.tvTraitsDetails.text = getString(R.string.gemini_traits)
-            "Cancer" -> binding.tvTraitsDetails.text = getString(R.string.cancer_traits)
-            "Leo" -> binding.tvTraitsDetails.text = getString(R.string.leo_traits)
-            "Virgo" -> binding.tvTraitsDetails.text = getString(R.string.virgo_traits)
-            "Libra" -> binding.tvTraitsDetails.text = getString(R.string.libra_traits)
-            "Scorpio" -> binding.tvTraitsDetails.text = getString(R.string.scorpio_traits)
-            "Sagittarius" -> binding.tvTraitsDetails.text = getString(R.string.sagittarius_traits)
-            "Capricorn" -> binding.tvTraitsDetails.text = getString(R.string.capricorn_traits)
-            "Aquarius" -> binding.tvTraitsDetails.text = getString(R.string.aquarius_traits)
-            "Pisces" -> binding.tvTraitsDetails.text = getString(R.string.pisces_traits)
+            "Aries" -> binding.tvTraitsDetails.text = getString(R.string.zodiac_sign_traits_dummy_text)
+            "Taurus" -> binding.tvTraitsDetails.text = getString(R.string.zodiac_sign_traits_dummy_text)
+            "Gemini" -> binding.tvTraitsDetails.text = getString(R.string.zodiac_sign_traits_dummy_text)
+            "Cancer" -> binding.tvTraitsDetails.text = getString(R.string.zodiac_sign_traits_dummy_text)
+            "Leo" -> binding.tvTraitsDetails.text = getString(R.string.zodiac_sign_traits_dummy_text)
+            "Virgo" -> binding.tvTraitsDetails.text = getString(R.string.zodiac_sign_traits_dummy_text)
+            "Libra" -> binding.tvTraitsDetails.text = getString(R.string.zodiac_sign_traits_dummy_text)
+            "Scorpio" -> binding.tvTraitsDetails.text = getString(R.string.zodiac_sign_traits_dummy_text)
+            "Sagittarius" -> binding.tvTraitsDetails.text = getString(R.string.zodiac_sign_traits_dummy_text)
+            "Capricorn" -> binding.tvTraitsDetails.text = getString(R.string.zodiac_sign_traits_dummy_text)
+            "Aquarius" -> binding.tvTraitsDetails.text = getString(R.string.zodiac_sign_traits_dummy_text)
+            "Pisces" -> binding.tvTraitsDetails.text = getString(R.string.zodiac_sign_traits_dummy_text)
             else -> binding.tvTraitsDetails.text = getString(R.string.zodiac_sign_traits)
         }
 
@@ -112,8 +112,8 @@ class ZodiacFragment : Fragment() {
         val calendar = Calendar.getInstance()
         calendar.time = userBirthDate ?: return "Invalid Date" // Handle parsing errors
 
-        var userBirthYear = calendar.get(Calendar.YEAR)
-        var userBirthMonth = calendar.get(Calendar.MONTH) + 1
+        val userBirthYear = calendar.get(Calendar.YEAR)
+        val userBirthMonth = calendar.get(Calendar.MONTH) + 1
 
         // Check for Aries
         var startDate = dateFormat.parse("21/03/$userBirthYear")
